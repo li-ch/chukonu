@@ -143,7 +143,7 @@
       <div class="portfolio-items">
         <div class="col-sm-6 col-md-3 col-lg-3 pred acd">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
-            <div class="hover-bg"> <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="hover-bg"> <a href="#portfolioModalHadoopWatch" class="portfolio-link" data-toggle="modal">
               <div class="hover-text">
                 <h4>HadoopWatch</h4>
                 Predicting Hadoop network traffic with disk monitoring.
@@ -152,9 +152,10 @@
               <img src="img/portfolio/01.jpg" class="img-responsive" alt="HadoopWatch"> </a> </div>
           </div>
         </div>
+
         <div class="col-sm-6 col-md-3 col-lg-3 pred acd">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="400ms">
-            <div class="hover-bg"> <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="hover-bg"> <a href="#portfolioModalFlowProphet" class="portfolio-link" data-toggle="modal">
               <div class="hover-text">
                 <h4>FlowProphet</h4>
                 Traffic prediction for generic parallel & distributed computing systems.
@@ -163,9 +164,10 @@
               <img src="img/portfolio/02.jpg" class="img-responsive" alt="FlowProphet"> </a> </div>
           </div>
         </div>
+
         <div class="col-sm-6 col-md-3 col-lg-3 schd acd">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="600ms">
-            <div class="hover-bg"> <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <div class="hover-bg"> <a href="#portfolioModalRapier" class="portfolio-link" data-toggle="modal">
               <div class="hover-text">
                 <h4>Rapier</h4>
                 Joint routing and scheduling for coflows.
@@ -174,9 +176,10 @@
               <img src="img/portfolio/03.jpg" class="img-responsive" alt="Rapier"> </a> </div>
           </div>
         </div>
+
         <div class="col-sm-6 col-md-3 col-lg-3 schd tid ind">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="800ms">
-            <div class="hover-bg"> <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <div class="hover-bg"> <a href="#portfolioModalCODA" class="portfolio-link" data-toggle="modal">
               <div class="hover-text">
                 <h4>CODA</h4>
                 Application-transparent coflow identification and error-tolerant scheduling.
@@ -188,7 +191,7 @@
 
         <div class="col-sm-6 col-md-3 col-lg-3 schd ind">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="1000ms">
-            <div class="hover-bg"> <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <div class="hover-bg"> <a href="#portfolioModalChukonu" class="portfolio-link" data-toggle="modal">
               <div class="hover-text">
                 <h4>Chukonu</h4>
                 Application-aware message scheduling.
@@ -213,7 +216,7 @@
 <!-- Use the modals below to showcase details about your portfolio projects! -->
 
 <!-- Portfolio Modal 1 -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModalHadoopWatch" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
@@ -226,12 +229,12 @@
           <div class="modal-body">
             <!-- Project Details Go Here -->
             <h2>HadoopWatch</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="item-intro">This paper presents our effort towards comprehensive traffic forecasting for big data applications using external, light-weighted file system monitoring. Our idea is motivated by the key observations that rich traffic demand information already exists in the log and meta-data files of many big data applications, and that such information can be readily extracted through run-time file system monitoring. </p>
             <img class="img-responsive img-centered" src="img/portfolio/01-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus, et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro, graeco urbanitas reformidans quo id. Error congue tacimates ei vis, facer facete ius cu, audiam prodesset pri ut. Id semper fuisset vel, has dolorum menandri eu.</p>
+            <p>As the first step, we use Hadoop as a concrete example to explore our methodology and develop a system called HadoopWatch to predict traffic demand of Hadoop applications. We further implement HadoopWatch in our real small-scale testbed with 10 physical servers and 30 virtual machines. Our experiments over a series of MapReduce applications demonstrate that HadoopWatch can forecast the traffic demand with almost 100% accuracy and time advance. Furthermore, it makes no modification of the Hadoop framework, and introduces little overhead to the application performance.</p>
             <ul class="list-inline">
-              <li><strong>Client</strong>: John Doe</li>
-              <li><strong>Category</strong>: Web Design</li>
+              <li><strong>People</strong>: Yang Peng, Kai Chen, Wei Bai</li>
+              <li><strong>Category</strong>: Traffic Prediction</li>
             </ul>
             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
           </div>
@@ -241,7 +244,7 @@
   </div>
 </div>
 <!-- Portfolio Modal 2 -->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModalFlowProphet" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
@@ -254,12 +257,12 @@
           <div class="modal-body">
             <!-- Project Details Go Here -->
             <h2>FlowProphet</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="item-intro">Data-parallel computing frameworks (DCF) such as MapReduce, Spark, and Dryad etc. have tremendous applications in big data and cloud computing, and throw tons of flows into data center networks. In this paper, we design and implement FLOWPROPHET, a general framework to predict traffic flows for DCFs. To this end, we analyze and summarize the common features of popular DCFs, and gain a key insight: since application logic in DCFs is naturally expressed by directed acyclic graphs (DAG), DAG contains necessary time and data dependencies for accurate flow prediction. Based on the insight, FLOWPROPHET extracts DAGs from user applications, and uses the time and data dependencies to calculate flow information 4-tuple, (source, destination, flow_size, establish_time), ahead-oftime for all flows. </p>
             <img class="img-responsive img-centered" src="img/portfolio/02-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus, et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro, graeco urbanitas reformidans quo id. Error congue tacimates ei vis, facer facete ius cu, audiam prodesset pri ut. Id semper fuisset vel, has dolorum menandri eu.</p>
+            <p>We also provide generic programming interface to FLOWPROPHET, so that current and future DCFs can deploy FLOWPROPHET readily. We implement FLOWPROPHET on both Spark and Hadoop, and perform extensive evaluations on a testbed with 37 physical servers. Our implementation and experiments demonstrate that, with time in advance and minimal cost, FLOWPROPHET can achieve almost 100% accuracy in source, destination, and flow size predictions. With accurate prediction from FLOWPROPHET, the job completion time of a Hadoop TeraSort benchmark is reduced by 12.52% on our cluster with a simple network scheduler.</p>
             <ul class="list-inline">
-              <li><strong>Client</strong>: John Doe</li>
-              <li><strong>Category</strong>: Web Design</li>
+              <li><strong>People</strong>: Hao Wang, Li Chen, Kai Chen, Ziyang Li</li>
+              <li><strong>Category</strong>: Traffic Prediction</li>
             </ul>
             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
           </div>
@@ -269,7 +272,7 @@
   </div>
 </div>
 <!-- Portfolio Modal 3 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModalRapier" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
@@ -282,12 +285,12 @@
           <div class="modal-body">
             <!-- Project Details Go Here -->
             <h2>Rapier</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="item-intro">In the data flow models of today’s data center applications such as MapReduce, Spark and Dryad, multiple flows can comprise a coflow group semantically. Only completing all flows in a coflow is meaningful to an application. To optimize application performance, routing and scheduling must be jointly considered at the level of a coflow rather than individual flows. However, prior solutions have significant limitation: they only consider scheduling, which is insufficient. To this end, we present RAPIER, a coflow-aware network optimization framework that seamlessly integrates routing and scheduling for better application performance. </p>
             <img class="img-responsive img-centered" src="img/portfolio/03-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus, et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro, graeco urbanitas reformidans quo id. Error congue tacimates ei vis, facer facete ius cu, audiam prodesset pri ut. Id semper fuisset vel, has dolorum menandri eu.</p>
+            <p>Using a smallscale testbed implementation and large-scale simulations, we demonstrate that RAPIER significantly reduces the average coflow completion time (CCT) by up to 79.30% compared to the state-of-the-art scheduling-only solution, and it is readily implementable with existing commodity switches.</p>
             <ul class="list-inline">
-              <li><strong>Client</strong>: John Doe</li>
-              <li><strong>Category</strong>: Web Design</li>
+              <li><strong>Client</strong>: Yangming Zhao, Wei Bai, Kai Chen</li>
+              <li><strong>Category</strong>: Coflow Scheduling</li>
             </ul>
             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
           </div>
@@ -297,7 +300,7 @@
   </div>
 </div>
 <!-- Portfolio Modal 4 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModalCODA" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
@@ -310,12 +313,12 @@
           <div class="modal-body">
             <!-- Project Details Go Here -->
             <h2>CODA</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="item-intro">Leveraging application-level requirements using coflows has recently been shown to improve application-level communication performance in data-parallel clusters. However, existing coflow-based solutions rely on modifying applications to extract coflows, making them inapplicable to many practical scenarios. In this paper, we present CODA, a first attempt at automatically identifying and scheduling coflows without any application-level modifications. </p>
             <img class="img-responsive img-centered" src="img/portfolio/04-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus, et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro, graeco urbanitas reformidans quo id. Error congue tacimates ei vis, facer facete ius cu, audiam prodesset pri ut. Id semper fuisset vel, has dolorum menandri eu.</p>
+            <p>We employ an incremental clustering algorithm to perform fast, application-transparent coflow identification and complement it by proposing an error-tolerant coflow scheduler to mitigate occasional identification errors. Testbed experi- ments and large-scale simulations with realistic production workloads show that CODA can identify coflows with more than 90% accuracy, and CODA’s scheduler is robust to inac- curacies, enabling communication stages to complete 2.4× (5.1×) faster on average (95th percentile) in comparison to per-flow mechanisms. CODA’s performance is comparable to that of solutions requiring application-level modifications.</p>
             <ul class="list-inline">
-              <li><strong>Client</strong>: John Doe</li>
-              <li><strong>Category</strong>: Web Design</li>
+              <li><strong>People</strong>: Hong Zhang, Bairen Yi, Li Chen, Kai Chen</li>
+              <li><strong>Category</strong>: Traffic Identification, Coflow Scheduling</li>
             </ul>
             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
           </div>
@@ -325,7 +328,7 @@
   </div>
 </div>
 <!-- Portfolio Modal 5 -->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModalChukonu" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
@@ -338,12 +341,12 @@
           <div class="modal-body">
             <!-- Project Details Go Here -->
             <h2>Chukonu</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="item-intro"> Over the years, distributed and parallel computing (DPC) applications have gained much popularity. They have adopted widely-accepted design patterns. For transmission of messages and data, they usually follow the proxy pattern, and use Remote Procedure Calls (RPC) to handle the communication across remote processes. A good example is the Hadoop RPC framework, which has been used in multiple projects such as HDFS and HBase. Optimizing these applications for modern data centers requires fine-grained data plane functions in the network, for both enforcement and visibility. Unlike network virtualization systems, which operates on granularity of tenant or vir- tual machine (VM), network IO optimizations for applications need flow-level, message-level, and/or packet-level granularity.</p>
             <img class="img-responsive img-centered" src="img/portfolio/05-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus, et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro, graeco urbanitas reformidans quo id. Error congue tacimates ei vis, facer facete ius cu, audiam prodesset pri ut. Id semper fuisset vel, has dolorum menandri eu.</p>
+            <p>With RPC as a good abstraction covering both application layer and transport layer, existing solutions still mostly use flow (a network layer abstraction) for application IO optimizations. Instead, we identify messages (in the context of this draft, the content of RPC calls) as the likely replacement. The benefit of operating on the message-level is that we can have closer ties to application logic, which allows us to have more accurate message semantics. For example, a centralized scheduler can extract and make use of "coflow" information to minimize the average completion time for multiple applications. We believe data plane functions should be enforced on the message-level (per-RPC) to improve the accuracy and flexibility of application performance optimization.</p>
             <ul class="list-inline">
-              <li><strong>Client</strong>: John Doe</li>
-              <li><strong>Category</strong>: Web Design</li>
+              <li><strong>People</strong>: Li Chen, Bairen Yi, Kai Chen </li>
+              <li><strong>Category</strong>: Coflow Scheduling</li>
             </ul>
             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
           </div>
